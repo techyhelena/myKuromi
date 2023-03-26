@@ -1,0 +1,145 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+
+body, html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+
+}
+
+/* body (homepage) */
+.index {
+	background-image: url("images/headerBg.jpg");
+	/* hero */
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* getting rid of scrollbar */
+	overflow: hidden; 
+
+}
+
+/* Home */
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #171717;
+}
+
+.logo {
+	width: 70%;
+}
+
+.logo-bar {
+	display: flex;
+}
+
+a {
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+.nav-links, .nav-linksM {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.nav-links a:nth-child(1):hover {
+	background-color: #FFE1E7;
+	color: #403d3e;
+}
+
+a:nth-child(1), a:nth-child(2) {
+	padding: 10px;
+	border-radius: 5px;
+}
+
+a:nth-child(2):hover {
+	background-color: #A59DCA;
+	color: #403d3e;
+}
+
+a:visited {
+	color: white;
+}
+
+.heroContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heroContent h1 {
+	font-family: 'Fredoka', sans-serif;
+	color: white;
+	position: absolute;
+	font-size: 6vw;
+	filter: drop-shadow(11px 5px 15px #000);
+}
+
+.heroContent img {
+	width: 50%;
+}
+
+
+/* My Melody */
+.myMelody {
+	background-image: url("images/melodyBg.jpg");
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.navbarM {
+	background-color: #F8BDC3;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.nav-linksM a {
+	color: black;
+}
+
+.nav-linksM  a:nth-child(1):hover {
+	color: #fff;
+	background-color: #bf8d8e;
+}
+
+.nav-linksM a:nth-child(2):hover {
+	color: #fff;
+}
+
+/* intro */
+.headerM {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10%;
+}
+
+.contentM h2{
+	font-family: 'Fredoka', sans-serif;
+	font-size: 6vh;
+}
+
+.contentM li {
+	margin-bottom: 5%;
+	font-size: 25px;
+}
+
+
+
+
+
+
