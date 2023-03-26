@@ -43,6 +43,7 @@ body, html {
 }
 
 a {
+	color: white;
 	margin-right: 20px;
 	text-decoration: none;
 }
@@ -125,8 +126,10 @@ a:visited {
 .headerM {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	padding-top: 10%;
 }
+
 
 .contentM h2{
 	font-family: 'Fredoka', sans-serif;
@@ -135,8 +138,13 @@ a:visited {
 
 .contentM li {
 	margin-bottom: 5%;
-	font-size: 25px;
+	font-size: 20px;
 }
+
+.melodyProf {
+	width: 30%;
+	object-fit: cover;
+} 
 
 
 
