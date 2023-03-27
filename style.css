@@ -8,6 +8,7 @@ body, html {
 	padding: 0;
 	margin: 0;
 	font-family: 'Comfortaa', cursive;
+	scroll-behavior: smooth;
 
 }
 
@@ -20,9 +21,11 @@ body, html {
 	position: relative;
 	background-position: center;
 	background-repeat: no-repeat;
-	/* getting rid of scrollbar */
-	overflow: hidden; 
 
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* Home */
@@ -48,12 +51,12 @@ a {
 	text-decoration: none;
 }
 
-.nav-links, .nav-linksM {
+.nav-links, .nav-linksM, .nav-linksK {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-.nav-links a:nth-child(1):hover {
+.nav-links a:nth-child(1):hover,  .nav-linksK a:nth-child(1):hover {
 	background-color: #FFE1E7;
 	color: #403d3e;
 }
@@ -94,11 +97,14 @@ a:visited {
 /* My Melody */
 .myMelody {
 	background-image: url("images/melodyBg.jpg");
-	height: 100%;
-	background-size: cover;
-	position: relative;
-	background-position: center center;
-	background-repeat: no-repeat;
+	/* Set a specific height */
+  	min-height: 100%; 
+
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbarM {
@@ -123,20 +129,26 @@ a:visited {
 }
 
 /* intro */
-.headerM {
+.headerM, .headerK {
+/*	position: relative;*/
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 10%;
+	padding-top: 15%;
 }
 
 
-.contentM h2{
+.contentM h2, .contentK h2, .titleM {
 	font-family: 'Fredoka', sans-serif;
 	font-size: 6vh;
 }
 
-.contentM li {
+.titleM {
+	text-align: center;
+	padding-top: 10%;
+}
+
+.contentM li, .contentK li {
 	margin-bottom: 5%;
 	font-size: 20px;
 }
@@ -147,8 +159,137 @@ a:visited {
 	object-fit: cover;
 } 
 
+.downArrow {
+	width: 2%;
+
+}
+
+.buttonM {
+	margin: 0;
+	padding: 5% 0;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.downArrow:hover {
+	transform: translate(0, 10px);
+}
+
+/* dropdown */
+#melodyD, #kuromiD {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 20%;
+}
+
+.toDoh {
+	background-color: #F8BDC3;
+	padding: 18px;
+	margin: 0;
+}
+
+.toDo {
+	margin-bottom: 10px;
+}
+
+/* dropdown */
+.accordionContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 33.3%;
+
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	width: 100%;
+    background-color: #F8BDC3;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover, #kuromi:hover{
+    background-color: #e1b0b5;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel, .panelImg {
+	text-align: center;
+	width: 100%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+	padding: 0 18px;
+	text-align:left;
+}
+
+.panel img {
+	width: 40%;
+	padding: 15px 10px;
+}
 
 
+.accordion:after {
+    content: '◀';
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "▼";
+}
+
+/* Kuromi */
+
+.kuromi {
+	background-image: url("images/kuromiBackground.jpeg");
+	/* Set a specific height */
+  	min-height: 100%; 
+
+	 /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  color: white;
+
+}
+
+.navbarK {
+	background-color: #573d65;
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: 100%;
+}
 
 
+#kuromiAcc, #toDoK, #toDoK ul {
+	background-color: #b18fbf;
+	color: white;
+}
+
+.notes {
+	color: black;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-right: 5px;
+
+}
 
