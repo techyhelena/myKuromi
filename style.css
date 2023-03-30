@@ -172,12 +172,11 @@ a:visited {
 	display: flex;
 	justify-content: center;
 	position: relative;
-	  animation: jumpInfinite 1.5s infinite;
 
 }
 
 .downArrow:hover {
-/*	transform: translate(0, 10px);*/
+	transform: translate(0, 10px);
 }
 
 
