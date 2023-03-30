@@ -310,6 +310,10 @@ a:visited {
     background-color: #e1b0b5;
 }
 
+#kuromiAcc:hover {
+	background-color: #573d65;
+}
+
 /* Style the accordion panel. Note: hidden by default */
 .panel, .panelImg {
 	text-align: center;
