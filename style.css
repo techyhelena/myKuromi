@@ -253,23 +253,6 @@ a:visited {
 
 }
 
-/* On mouse-over, add a light purple color */
-.container:hover input ~ .checkmarkuromi {
-	background-color: #b18fbf;
-}
-
-/* When the checkbox is checked, add a dark purple background */
-.container input:checked ~ .checkmarkuromi {
-	background-color: #573d65;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmarkuromi:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
@@ -287,19 +270,6 @@ a:visited {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* Style the checkmark/indicator */
-.container .checkmarkuromi:after {
   left: 6px;
   top: 2px;
   width: 5px;
@@ -413,3 +383,33 @@ a:visited {
 
 }
 
+/* to-do list (checklist) */
+/* On mouse-over, add a light purple color */
+.container:hover input ~ .checkmarkuromi {
+	background-color: #b18fbf;
+}
+
+/* When the checkbox is checked, add a dark purple background */
+.container input:checked ~ .checkmarkuromi {
+	background-color: #573d65;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkuromi:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Style the checkmark/indicator */
+.container .checkmarkuromi:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
