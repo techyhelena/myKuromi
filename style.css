@@ -93,6 +93,21 @@ a:visited {
 	width: 50%;
 }
 
+/* media query */
+@media only screen and (max-width: 600px) {
+	.heroContent {
+		padding-top: 30%;
+	}
+
+	.heroContent img {
+		width: 100%;
+	}
+
+	.heroContent h1 {
+		font-size: 3em;
+	}
+}
+
 
 /* My Melody */
 .myMelody {
