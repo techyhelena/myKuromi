@@ -106,6 +106,10 @@ a:visited {
 	.heroContent h1 {
 		font-size: 3em;
 	}
+
+	.nav-links a {
+		font-size: 10em;
+	}
 }
 
 
