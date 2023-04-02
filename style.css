@@ -73,7 +73,7 @@ a:nth-child(2):hover {
 }
 
 a:visited {
-	color: white;f
+	color: white;
 }
 
 .heroContent {
@@ -138,14 +138,32 @@ a:visited {
 		justify-content: center;
 	}
 
-
 	.melodyProf {
 		width: 80% !important;
 		padding: 0 !important;
-		margin: 4em 0px !important;
+		margin: 4em 0px 1em 0px !important;
+		border-radius: 50%;
 	}
 
+	.info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
+	.info p {
+		margin: 10px 0px 5px 0px;
+	}
+
+	.downArrow {
+		width: 5% !important;
+	}
+
+	@keyframes bounce-1 {
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(-5px); }
+	100% { transform: translateY(0); }
+}
 
 
 }
