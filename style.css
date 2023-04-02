@@ -113,14 +113,18 @@ a:visited {
 		margin-right: 5px;
 	}
 
+	/*	melody */
+
 	.headerM {
 		display: none !important;
 	}
 
+
+
 	.altHeaderM {
 		display: flex !important;
 		flex-direction: column;
-		padding-top: 25%;
+		padding-top: 20%;
 	}
 
 	.altHeaderM h2 {
@@ -165,8 +169,20 @@ a:visited {
 	100% { transform: translateY(0); }
 }
 
+#melodyTitle {
+	display: none;
+}
+
+#altTitleM {
+	padding: 0;
+	margin: 0;
+}
+
+/* accordions */
+
 
 }
+
 /* My Melody */
 .myMelody {
 	background-image: url("images/melodyBg.jpg");
