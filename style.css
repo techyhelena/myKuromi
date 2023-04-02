@@ -169,17 +169,36 @@ a:visited {
 	100% { transform: translateY(0); }
 }
 
-#melodyTitle {
-	display: none;
-}
+	#melodyTitle {
+		display: none;
+	}
 
-#altTitleM {
-	padding: 0;
-	margin: 0;
-}
+	#altTitleM {
+		padding: 0;
+		margin: 0 0 10px 0;
+	}
 
-/* accordions */
+	/* accordions */
+	#melodyD {
+		flex-direction: column !important;
+	}
 
+	.toDoh {
+		margin: 15px !important;
+	}
+
+	.checkBoxDiv {
+		margin-left: 15px;
+	}
+
+	.container {
+		font-size: 14px !important;
+	}
+
+	.accordionContainer {
+		width: 95% !important;
+		margin: 15px;
+	}
 
 }
 
@@ -221,12 +240,21 @@ a:visited {
 }
 
 
-
-
-/* intro */
+/* media queries */
 .altHeaderM {
 	display: none;
 }
+
+#altTitleM {
+	display: none;
+}
+
+
+/* intro */
+
+
+
+
 
 .headerM, .headerK {
 	display: flex;
