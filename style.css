@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
 
 
+
 body, html {
 	height: 100%;
 	padding: 0;
@@ -143,11 +144,6 @@ a:visited {
 	display: none;
 }
 
-#altTitleM .buttonM {
-		display: none;
-}
-
-
 
 /* intro */
 
@@ -203,6 +199,11 @@ a:visited {
 	50%  { transform: translateY(-20px); }
 	100% { transform: translateY(0); }
 }
+
+#altButton{
+		display: none;
+}
+
 
 /* dropdown */
 #melodyD, #kuromiD {
@@ -510,6 +511,10 @@ a:visited {
 
 	#melodyTitle .buttonM {
 		display: none;
+	}
+
+	#altButton {
+		display: flex;
 	}
 
 	@keyframes bounce-1 {
